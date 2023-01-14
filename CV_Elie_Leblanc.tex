@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Élie Leblanc
+% Based off of: https://fr.overleaf.com/latex/templates/abey-resume-template/jxstkffrxxmh
+% License : MIT
+%------------------------
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\pagenumbering{gobble}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\schoolPeriod}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\formerJobHeading}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\underline{\large#1}} $|$ \large#2 & \textbf{\small #3}\\
+    \end{tabular*}\vspace{3pt}
+    }
+
+    \newcommand{\jobDescription}[1]{\textbf{\large Description:}\\{\small#1}\\}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\SubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\SubHeadingListEnd}{\end{itemize}}
+\newcommand{\jobTaskListStart}{\textbf{\large Tâches:}\begin{itemize}}
+\newcommand{\jobTaskListEnd}{\end{itemize}\vspace{-18pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+  {\Huge \scshape Élie Leblanc} \\ \vspace{1pt}
+  10425 rue Tanguay, Montréal, Canada \\ \vspace{1pt}
+  \small \href{tel:5146543063}{ \raisebox{-0.1\height}\faPhone\ \underline{(514) 654-3063} ~}
+  \href{mailto:leblancelie.moi@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{leblancelie.moi@gmail.com}} ~\\
+  \vspace{3pt}Langues: Français et Anglais
+  \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{ \LARGEÉtudes}
+\SubHeadingListStart
+\schoolPeriod
+{Collège Mont-Saint-Louis}{Septembre 2014 $\rightarrow$ Juin 2019}
+{Études secondaires}{Montréal, Canada}
+\SubHeadingListEnd
+
+\SubHeadingListStart
+\schoolPeriod
+{Collège de Bois-de-Boulogne}{Septembre 2019 $\rightarrow$ Décembre 2021}
+{DEC Sciences informatiques et Mathématiques}{Montréal, Canada}
+\SubHeadingListEnd
+
+\SubHeadingListStart
+\schoolPeriod
+{Université de Montréal}{Septembre 2021 $\rightarrow$ En cours}
+{Baccalauréat en informatique }{Montréal, Canada}
+\SubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\LARGE Expérience professionelle}
+\vspace{-5pt}
+
+\SubHeadingListStart
+\formerJobHeading{Commis à l'informatique}{Addisson Électronique}{Hiver 2019}
+\jobDescription{Les Commis effectuent toutes les tâches journalières nécessaires au
+  bon fonctionnement de l'entreprise. Ils.Elles doivent aussi s'assurer de connaitre
+  le rôle et l'emplacement de tous les produits dans leur département, car leur rôle est aussi de consseiller les clients.es.}
+\jobTaskListStart
+\resumeItem{Maintenir les rayons stockés}
+\resumeItem{Conseiller la clientèle}
+\resumeItem{Gérer les retours}
+\jobTaskListEnd
+
+\formerJobHeading{Aide-Cuisinier}{Camps Odyssée}{Été 2019}
+\jobDescription{Le rôle de l'aide cuisinier.ère est d'effectuer toutes les tâches répétitives
+  nécessaires pour fournir la quantitée de nourriture pour nourrir tous les campeurs,
+  sous la direction des cuisiniers.ères.}
+\jobTaskListStart
+\resumeItem{Éviter la contamination croisée}
+\resumeItem{Garder l'espace de travail salubre}
+\resumeItem{Gérer la plonge}
+\jobTaskListEnd
+
+\formerJobHeading{Commis aux pièces automobiles}{Canadian Tire Montréal-Nord}{Été 2020}
+\jobDescription{Le rôle des commis aux pièces automobiles est extrèmement similaire à celui de commis informatique.
+  La différence étant que ce rôle demande des connaissances différentes.}
+\jobTaskListStart
+\resumeItem{Maintenir les rayons stockés}
+\resumeItem{Conseiller la clientèle}
+\resumeItem{Gérer les retours}
+\jobTaskListEnd
+
+\formerJobHeading{Cuisinier}{Frites Alors Fleury}{Automne 2021}
+\jobDescription{Les cuisiniers recoivent les commandes des clients et les préparent le plus
+  rapidement possible, en tenant compte des demandes spéciales et restrictions alimentaires
+  de chaque client. Ils.Elles doivent aussi s'assurer qu'ils ont assez d'ingrédients à leur disposition
+  à tout moment.}
+\jobTaskListStart
+\resumeItem{Cuisiner les commandes des clients}
+\resumeItem{Garder l'espace de travail salubre}
+\jobTaskListEnd
+\SubHeadingListEnd
+\vspace{5pt}
+
+%-----------Connaissances Techniques-----------
+\section{\LARGE Connaissances Techniques}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{\normalsize{Languages:}}{ \normalsize{Python, Java, Dart, JavaScript, HTML, CSS, SQL, XML, \LaTeX}} \\
+        \textbf{\normalsize{Outils de dévellopement:}}{ \normalsize{VS Code, NetBeans}} \\
+        \textbf{\normalsize{Technologies:}}{\normalsize{ Linux, Windows, MacOs, GitHub, Qiskit, Mircosoft Office}} \\
+        }}
+\end{itemize}
+\vspace{-15pt}
+%-----------Qualités----------------
+\section{\Large Qualités}
+\begin{itemize}
+  \item Curieux
+  \item Sympatique
+  \item Apprend et Comprend rapidement
+  \item Organisé
+\end{itemize}
+
+\end{document}
