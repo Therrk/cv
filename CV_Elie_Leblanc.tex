@@ -49,7 +49,7 @@
   }
 }
 
-\newcommand{\schoolPeriod}[4]{
+\newcommand{\subHeading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\large#1} & \textbf{\small #2} \\
@@ -65,14 +65,14 @@
     \end{tabular*}\vspace{3pt}
     }
 
-    \newcommand{\jobDescription}[1]{\textbf{\large Description:}\\{\small#1}\\}
+\newcommand{\jobDescription}[1]{\textbf{\large Description:}\\{\small#1}\\}
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \newcommand{\SubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\SubHeadingListEnd}{\end{itemize}}
-\newcommand{\jobTaskListStart}{\textbf{\large Tâches:}\begin{itemize}}
-\newcommand{\jobTaskListEnd}{\end{itemize}\vspace{-18pt}}
+\newcommand{\taskListStart}{\textbf{\large Tâches:}\begin{itemize}}
+\newcommand{\taskListEnd}{\end{itemize}\vspace{-18pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,21 +96,22 @@
 %-----------École-----------
 \section{ \LARGEÉtudes}
 \SubHeadingListStart
-\schoolPeriod
+\subHeading
 {Collège Mont-Saint-Louis}{Septembre 2014 $\rightarrow$ Juin 2019}
 {Études secondaires}{Montréal, Canada}
 \SubHeadingListEnd
 
 \SubHeadingListStart
-\schoolPeriod
+\subHeading
 {Collège de Bois-de-Boulogne}{Septembre 2019 $\rightarrow$ Décembre 2021}
 {DEC Sciences informatiques et Mathématiques}{Montréal, Canada}
 \SubHeadingListEnd
 
 \SubHeadingListStart
-\schoolPeriod
+\subHeading
 {Université de Montréal}{Septembre 2021 $\rightarrow$ En cours}
-{Baccalauréat bidisciplinaire en mathématiques et informatique }{Montréal, Canada}
+{Baccalauréat bidisciplinaire en mathématiques et informatique 
+\href{https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques-et-informatique/admission-et-exigences/}}{Montréal, Canada}
 \SubHeadingListEnd
 
 %-----------Anciens emplois-----------
@@ -122,72 +123,84 @@
 \jobDescription{Les Commis effectuent toutes les tâches journalières nécessaires au
   bon fonctionnement de l'entreprise. Ils.Elles doivent aussi s'assurer de connaitre
   le rôle et l'emplacement de tous les produits dans leur département, car leur rôle est aussi de consseiller les clients.es.}
-\jobTaskListStart
-\resumeItem{Maintenir les rayons stockés}
-\resumeItem{Conseiller la clientèle}
-\resumeItem{Gérer les retours}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Maintenir les rayons stockés}
+	\resumeItem{Conseiller la clientèle}
+	\resumeItem{Gérer les retours}
+\taskListEnd
 
 \formerJobHeading{Aide-Cuisinier}{Camps Odyssée}{Été 2019}
 \jobDescription{Le rôle de l'aide cuisinier.ère est d'effectuer toutes les tâches répétitives
   nécessaires pour fournir la quantitée de nourriture pour nourrir tous les campeurs,
   sous la direction des cuisiniers.ères.}
-\jobTaskListStart
-\resumeItem{Éviter la contamination croisée}
-\resumeItem{Garder l'espace de travail salubre}
-\resumeItem{Gérer la plonge}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Éviter la contamination croisée}
+	\resumeItem{Garder l'espace de travail salubre}
+	\resumeItem{Gérer la plonge}
+\taskListEnd
 
 \formerJobHeading{Commis aux pièces automobiles}{Canadian Tire Montréal-Nord}{Été 2020}
 \jobDescription{Le rôle des commis aux pièces automobiles est extrèmement similaire à celui de commis informatique.
   La différence étant que ce rôle demande des connaissances différentes.}
-\jobTaskListStart
-\resumeItem{Maintenir les rayons stockés}
-\resumeItem{Conseiller la clientèle}
-\resumeItem{Gérer les retours}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Maintenir les rayons stockés}
+	\resumeItem{Conseiller la clientèle}
+	\resumeItem{Gérer les retours}
+\taskListEnd
 
 \formerJobHeading{Cuisinier}{Frites Alors Fleury}{Automne 2021}
 \jobDescription{Les cuisiniers.ères recoivent les commandes des clients et les préparent le plus
   rapidement possible, en tenant compte des demandes spéciales et restrictions alimentaires
   de chaque client. Ils.Elles doivent aussi s'assurer qu'ils ont assez d'ingrédients à leur disposition
   à tout moment.}
-\jobTaskListStart
-\resumeItem{Préparer les commandes des clients}
-\resumeItem{Garder l'espace de travail salubre}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Préparer les commandes des clients}
+	\resumeItem{Garder l'espace de travail salubre}
+\taskListEnd
 
 \formerJobHeading{Cuisinier}{Dic Ann's Marché Central}{Printemps 2022}
 \jobDescription{Le poste de cuisinier.ère au Dic Ann's est très similaire à ailleurs, préparer les commandes
 le plus rapidement possible, en tenant compte des demandes spécifiques de chaque client, tout en s'assurant
 que la cuisine ait tout le nécessaire pour continuer son bon fonctionnement jusqu'à la fermeture du restaurant.}
-\jobTaskListStart
-\resumeItem{Préparer les commandes}
-\resumeItem{Garder la cuisine stockée en tout temps}
-\resumeItem{S'assurer de l'exactitude des commandes du fournisseur}
-\resumeItem{Préparer la cuisine avant l'ouverture du restaurant, et la netoyer avant la fermeture}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Préparer les commandes}
+	\resumeItem{Garder la cuisine stockée en tout temps}
+	\resumeItem{S'assurer de l'exactitude des commandes du fournisseur}
+	\resumeItem{Préparer la cuisine avant l'ouverture du restaurant, et la netoyer avant la fermeture}
+\taskListEnd
 
 \formerJobHeading{Moniteur}{Camps Odyssée}{Étés 2021/2022}
 \jobDescription{Un moniteur est assigné à un groupe de 8 à 12 campeurs pour une durée d'une semaine à un mois, tout dépendant du groupe d'âge.
 Durant cette période, il est complètement responsable de chacun des campeurs.}
-\jobTaskListStart
-\resumeItem{Assurer la sécurité des campeurs en tout temps}
-\resumeItem{Assurer la santé des campeurs}
-\resumeItem{Rendre l'entièreté du séjour la plus agréable possible}
-\resumeItem{Guider les campeurs lors d'une expédition de canot-camping}
-\jobTaskListEnd
+\taskListStart
+	\resumeItem{Assurer la sécurité des campeurs en tout temps}
+	\resumeItem{Assurer la santé des campeurs}
+	\resumeItem{Rendre l'entièreté du séjour la plus agréable possible}
+	\resumeItem{Guider les campeurs lors d'une expédition de canot-camping}
+\taskListEnd
 
 \SubHeadingListEnd
 \vspace{5pt}
+
+%-----------Autres-----------
+\section{\LARGE Autres}
+\subHeadingListStart
+	\subHeading{AÉDIROUM \href{http://aediroum.iro.umontreal.ca/}{Septembre 2022 $\rightarrow$ Septembre 2023}
+		{Responsable soirées}{}}
+		\taskListStart
+			\resumeItem{Organiser des activités variées pour les étudiants du département d'informatique et de recherche opérationelle}
+			\resumeitem{S'assurer de la communication avec les étudiants}
+		\taskListEnd
+	\formerJobHeading{Récipiendaire de la bourse d'excllence}{Département d'informatique et de recherche opérationelle}{2022}
+
 
 %-----------Connaissances Techniques-----------
 \section{\LARGE Connaissances Techniques}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
         \textbf{\normalsize{Languages:}}{ \normalsize{Python, Java, Dart, JavaScript, HTML, CSS, SQL, XML, \LaTeX}} \\
-        \textbf{\normalsize{Outils de dévellopement:}}{ \normalsize{VS Code, NetBeans}} \\
-        \textbf{\normalsize{Technologies:}}{\normalsize{ Linux, Windows, MacOs, GitHub, Qiskit, Mircosoft Office}} \\
+        \textbf{\normalsize{Outils de dévellopement:}}{ \normalsize{VS Code, NetBeans, git}} \\
+        \textbf{\normalsize{Technologies:}}{\normalsize{ Linux, Windows, MacOs, Qiskit, Microsoft Office}} \\
         }}
 \end{itemize}
 \vspace{-15pt}
