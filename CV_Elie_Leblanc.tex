@@ -49,11 +49,20 @@
   }
 }
 
-\newcommand{\subHeading}[3]{
-  \vspace{-2pt}\item
+\newcommand{\otherSubHeading}[3]{
+  \vspace{10pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\underline{\large#1}} & \textbf{\small #2} \\
       \textit{\large#3} &\\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\subHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
       
     \end{tabular*}\vspace{-7pt}
 }
@@ -99,15 +108,11 @@
 \subHeading
 {Collège Mont-Saint-Louis}{Septembre 2014 $\rightarrow$ Juin 2019}
 {Études secondaires}{Montréal, Canada}
-\SubHeadingListEnd
 
-\SubHeadingListStart
 \subHeading
 {Collège de Bois-de-Boulogne}{Septembre 2019 $\rightarrow$ Décembre 2021}
 {DEC Sciences informatiques et Mathématiques}{Montréal, Canada}
-\SubHeadingListEnd
 
-\SubHeadingListStart
 \subHeading
 {Université de Montréal}{Septembre 2021 $\rightarrow$ En cours}
 {Baccalauréat bidisciplinaire en mathématiques et informatique 
@@ -188,11 +193,10 @@ Durant cette période, il est complètement responsable de chacun des campeurs.}
 \formerJobHeading{AÉDIROUM }{Responsable soirées}{Septembre 2022 $\rightarrow$ Septembre 2023}
     \taskListStart
         \resumeItem{Organiser des activités variées pour les étudiants du département d'informatique et de recherche opérationelle}
-        \resumeitem{S'assurer de la communication avec les étudiants}
+        \resumeItem{S'assurer de la communication avec les étudiants}
     \taskListEnd
+\otherSubHeading{Récipiendaire de la bourse d'excllence}{2022}{Département d'informatique et de recherche opérationelle}
 \SubHeadingListEnd
-\vspace{25pt}
-\subHeading{Récipiendaire de la bourse d'excllence}{2022}{Département d'informatique et de recherche opérationelle}
 
 %-----------Connaissances Techniques-----------
 \section{\LARGE Connaissances Techniques}
